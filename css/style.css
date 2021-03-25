@@ -141,7 +141,7 @@ hr {
 .timeline-item {
   display: flex;
   position: relative;
-  color:black;
+  color:#000000;
 }
 
 /*Making a vertical line came from: https://codyhouse.co/gem/vertical-timeline/*/
@@ -208,7 +208,7 @@ hr {
 }
 
 .label-dark-blue {
-  background: #0A4176;;
+  background: #0A4176;
 }
 
 .label-light-blue {
@@ -369,7 +369,7 @@ footer{
   font-size: 10px;
   padding: 5px;
   margin: 5px;
-  color: #3D4849;
+  color: #0A4176;
 }
 
 .h1-formatted {
@@ -388,7 +388,7 @@ footer{
 /* End of amazon.html */
 /* about.html css starts */
 .hide-in-mobile {
-  display: none;;
+  display: none;
 }
 
 .primary-color {
