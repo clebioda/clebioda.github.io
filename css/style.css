@@ -1,0 +1,526 @@
+* {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+a.skip {
+  background: #ffffff;
+  left: 0;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: #0A4176;
+  text-decoration-style: solid;
+}
+
+/* Navagation Bar Start */
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0A4176;
+}
+
+.title-left {
+  padding: 15px 15px;
+  background-color: #0A4176;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.title-right {
+  position: relative;
+  padding-top: 15px;
+  left: -10px;
+  background-color: #0A4176;
+  color: #70B2E7;
+  font-size: 20px;
+}
+
+.menu {
+  display: none;
+  background-color: #0A4176;
+  color: #ffffff;
+}
+
+.hamburger {
+  background-color: #0A4176;
+  color: #ffffff;
+  border: none;
+  display: block;
+  position: absolute;
+  right: 1.5%;
+  top: 1.5%;
+}
+
+.nav-item a {
+  color: #ffffff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  border-bottom: 1px solid #70B2E7;
+  }
+
+.nav-item-active a {
+  color: #70B2E7;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  border-bottom: 1px solid #70B2E7;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.mat-icon-center {
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+}
+
+hr {
+  width:100%;
+  padding: 0px;
+  margin: 5px;
+  border-top: 1px solid #70B2E7;
+}
+
+/* Navagation Bar End */
+/* Start of home.html */
+.typewriter p {
+  padding: 40px 0px;
+  text-align: center;
+  overflow: hidden;
+  font-size: 10px;
+  white-space: nowrap;
+  margin: auto;
+  letter-spacing: .10em;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+.text-typewriter {
+  padding: 10px;
+  font-size: 10px;
+  letter-spacing: .10em;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.typewriter p {
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 75% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    10% { border-color: #0A4176; }
+}
+
+.container-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.uk-card {
+	max-height: 200px;
+}
+
+.timeline-item {
+  display: flex;
+  position: relative;
+  color:black;
+}
+
+/*Making a vertical line came from: https://codyhouse.co/gem/vertical-timeline/*/
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  background: #CDCDCD;
+  height: 100%;
+  top: 20px;
+  left: 15px;
+  width: 2px;
+	z-index: -1;
+}
+
+.timeline-item:last-child::before {
+  height: 65%;
+}
+
+.timeline-icon .uk-badge {
+	margin-top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.timeline-card {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-left: 15px;
+  margin-bottom: 40px;
+  overflow: auto;
+}
+
+.uk-card-body p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-extra {
+  margin-bottom: 20px;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.badge-yellow {
+  background: #FBBE0B;
+}
+
+.badge-green {
+  background: #38B73F
+}
+
+.badge-red {
+  background: #DC4A35
+}
+
+.label {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #0975E1;
+  line-height: 1.5;
+  font-size: 0.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: auto
+}
+
+.label-dark-blue {
+  background: #0A4176;;
+}
+
+.label-light-blue {
+  color: #000000;
+  background: #96C6EE;
+}
+
+.override-ui-kit-h1 {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  font-weight: 700;
+}
+/* End of home.html */
+
+footer{
+  background-color: #0A4176;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+
+/*work.html css begins*/
+.grid-container {
+  display: grid;
+  position: relative;
+  padding: 20px;
+  grid-template-rows: 85px 1fr 1fr 90px 200px 60px 200px 60px 200px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #EEEEEE;
+}
+
+.grid-item-container {
+  font-size: 15px;
+  padding: 20px;
+  background-color: #0A4176;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.grid-item-container-border {
+  border-right: 4px solid #70B2E7;
+  border-left: 4px solid #70B2E7;
+}
+
+.grid-item-large {
+  grid-column: 1 / -1;
+  grid-row: 2 / 4;
+}
+
+.grid-item-medium {
+  grid-column: 1 / -1;
+}
+
+.grid-item {
+  font-size: 20px;
+  padding: 15px;
+  color: #ffffff
+}
+
+.technologies-used {
+  font-size: 15px;
+  color: #424242;
+  text-align: right;
+}
+
+.year {
+  font-size: 15px;
+  color: #0A4176;
+  text-align: right;
+}
+
+.app-description {
+  font-size: 15px;
+  color: #0A4176;
+  text-align: left;
+}
+
+.work-pic {
+  text-align: center;
+  width: 100%;
+  height: 95%;
+}
+
+.work-link {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.overview {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top-alert {
+  padding: 20px;
+  background-color: #1E78BE;
+  color: #ffffff;
+}
+
+.close-alert {
+  margin-left: 10px;
+  color: #ffffff;
+  float: right;
+  font-size: 22px;
+  line-height: 18px;
+  transition: 0.5s;
+}
+
+.h2-formatted-black {
+  color: #000000;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* End of work.html*/
+/* amazon.html css starts */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px 0px  rgba(0,0,0,0.3);
+  margin: 0;
+}
+
+.image img {
+  flex-basis: 20%;
+  padding: 20px;
+  min-width: 45px;
+  max-width: 45px;
+}
+
+.text p{
+  font-size: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.why-text {
+  font-size: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: #3D4849;
+}
+
+.h1-formatted {
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.h2-formatted {
+  margin: 10px;
+  padding: 10px;
+  color: #6B6B6B;
+  font-weight: normal;
+}
+
+/* End of amazon.html */
+/* about.html css starts */
+.hide-in-mobile {
+  display: none;;
+}
+
+.primary-color {
+  background-color: #0A4176;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  padding-top: 10px;
+}
+
+.top-image {
+  grid-column: 3 / 5;
+  grid-row: 1;
+  padding-top: 350%;
+  z-index: 1;
+  width: 200%;
+}
+
+.bottom-image {
+  grid-column: 4 /-1;
+  grid-row: 1;
+  width: 75%;
+}
+
+.things-i-like-item {
+  color: #ffffff;
+  padding: 5px 5px 5px 15px;
+  font-size: 14px;
+}
+
+.h1-formatted-white {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.h2-formatted-lb {
+  padding: 10px;
+  color: #70B2E7;
+}
+
+.expierence {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.expierence_subheading {
+  color: #CDCDCD;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 10px;
+}
+
+.expierence-item {
+  padding: 5px 5px 5px 15px;
+}
+
+.white-btn {
+  background-color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #0A4176;
+  text-decoration: none;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/* bookcrossing.html css starts */
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.paragraph p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 6px 0px 12px;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+}
+
+.paragraph h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.paragraph img {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  width: 85%;
+  box-shadow: 2px 2px 4px 0px  rgba(0,0,0,0.3);
+}
+
+.title-heading {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  padding: 32px 20px 16px 20px;
+}
+
+.title-heading p {
+  font-size: 20px;
+}
+
+.content {
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  padding: 32px 20px 16px 20px;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+video {
+  width: 100%;
+}
