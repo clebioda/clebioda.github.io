@@ -244,8 +244,11 @@ footer{
   font-size: 15px;
   padding: 20px;
   background-color: #0A4176;
-  color: #ffffff;
   border-radius: 25px;
+}
+
+.grid-item-container p {
+  color: #ffffff
 }
 
 .grid-item-container-border {
@@ -296,13 +299,20 @@ footer{
   padding: 20px;
   display: flex;
   justify-content: center;
-  color: #ffffff;
+}
+
+.work-link, .work-link:visited {
+  border-radius: 25px;
+  height: 10px;
+  background-color: #0A4176;
+  color: #ffffff
 }
 
 .overview {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  color: #ffffff;
 }
 
 .top-alert {
