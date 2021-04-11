@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" href="uikit-3.6.18/css/uikit.min.css" />
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,45 +18,59 @@
     <title>Chris Lebioda | Home</title>
   </head>
   <body onload="randomQuotes()">
-    <!-- <a class="skip" href="#main">Skip to Main Content</a> -->
+    <a class="skip" href="#main">Skip to Main Content</a>
     <div class="topnav">
       <div role="banner" class="nav-container">
         <p class="title-left">Chris Lebioda |</p>
         <p class="title-right">Home</p>
+        <nav>
+          <button onclick="myFunction()" class="hamburger">
+            <span class="material-icons">menu</span>
+          </button>
+          <ul class="menu">
+            <li class="nav-item active">
+              <div class="material-icons mat-icon-center">home</div>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <div class="material-icons-outlined mat-icon-center">info</div>
+              <a href="html/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <div class="material-icons mat-icon-center">work_outline</div>
+              <a href="html/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <div class="material-icons-outlined mat-icon-center">shopping_cart</div>
+              <a href="html/amazon.html">Amazon Recent Purchases</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <button onclick="myFunction()" class="hamburger">
-          <span class="material-icons">menu</span>
-        </button>
-        <ul class="menu">
-          <li class="nav-item-active"><a href="index.html">
-            <div class="material-icons mat-icon-center">home</div>
-            Home</a></li>
-          <li class="nav-item"><a href="html/about.html">
-            <div class="material-icons-outlined mat-icon-center">info</div>
-            About</a></li>
-          <li class="nav-item"><a href="html/work.html">
-            <div class="material-icons mat-icon-center">work_outline</div>
-            Projects</a></li>
-          <li class="nav-item"><a href="html/amazon.html">
-            <div class="material-icons-outlined mat-icon-center">shopping_cart</div>
-            Amazon Recent Purchases</a></li>
-        </ul>
-      </nav>
     </div>
-    <main>
-      <div class="typewriter">
-        <p>It takes more than great code to be a great engineer.</p>
+    <main id="main" class="padding-top">
+      <div class="intro">
+        <div class="typewriter typewriter-green cursor-green">
+          <h1 class="hello">Hello<span class="period period-green"></span></h1>
+        </div>
+        <div class="chris-container">
+          <div class="typewriter typewriter-yellow cursor-yellow">
+            <p class="chris">I'm Chris<span class="period period-yellow"></span></p>
+          </div>
+        </div>
+        <p class="elevator">I'm a software engineer during the day, studying user experience and design at night, who believes that it
+          takes <span class="highlight">more than great code</span> to be a <span class="highlight">great engineer</span>
+          <span class="period period-red"></span></p>
       </div>
-      <div class="text-typewriter">
-      <h1 class="h1-formatted override-ui-kit-h1">My Timeline</h1>
-      <p>Everyone's path to becoming a developer is different. Whether it's knowing at an early age because
-        you loved creating things with your LEGO's, or taking an AP Comp Sci/Java class because your friend is taking it
-        and he thinks you would enjoy, or because you are currently unhappy with your current job so you learn on your
-        own from YouTube or do a coding boot camp. Everyone's timeline for finding this career is different and here is mine
-        (currently):
-      </p>
-    </div>
+      <div class="timeline">
+        <h2 class="h2-formatted">My Timeline</h2>
+        <p>Everyone's path to becoming a developer and getting in the field of technology is different. Whether it's knowing at
+          an early age because you loved creating your wildest imagination with your LEGO's, or taking an AP Comp Sci/Java class because your friend
+          is taking it and he thinks you would enjoy, or because you are currently unhappy with your current job so you learn on
+          your own from YouTube or do a coding boot camp. Everyone's timeline for finding this career/field is different.
+          Hopefully some of you can relate to my journey below:
+        </p>
+      </div>
       <div class="uk-container container-padding">
         <div class="timeline-container">
           <div class="timeline-item">
