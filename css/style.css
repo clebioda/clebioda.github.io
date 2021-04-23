@@ -6,9 +6,9 @@
 a.skip {
   background: #FFFFFF;
   position: absolute;
-  left: 10;
+  left: 0px;
   top: -40px;
-  z-index: 100;
+  z-index: 10000;
 }
 
 a.skip:focus{
@@ -1046,7 +1046,7 @@ video {
   .grid-container-exp-edu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 60px
+    margin-bottom: 60px;
   };
 
   .experience_subheading {
@@ -1175,7 +1175,6 @@ video {
   .section h2 {
     font-size: 26px;
   }
-
 }
 
 /* iPad Pro */
@@ -1369,7 +1368,7 @@ video {
     left: 621px;
   }
 
-  .timeline-item:nth-child(even)::before:last-child {
+  .timeline-item:nth-child(even):last-child {
     height: 65%;
   }
 
