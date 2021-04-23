@@ -13,131 +13,138 @@
     <script src="../scripts.js"></script>
     <title>Chris Lebioda | Projects</title>
   </head>
-  <body onload="randomQuotes()">
+  <body class="background-color" onload="randomQuotes()">
     <a class="skip" href="#main">Skip to Main Content</a>
     <div class="topnav">
       <div role="banner" class="nav-container">
-        <p class="title-left">Chris Lebioda |</p>
-        <p class="title-right">Projects</p>
+        <div class="fake-logo">
+          <p class="title-left">Chris Lebioda |</p>
+          <p class="title-right">Projects</p>
+        </div>
         <nav>
           <button onclick="myFunction()" class="hamburger">
             <span class="material-icons">menu</span>
           </button>
-          <ul class="menu">
-            <li class="nav-item">
+          <div class="menu">
+            <a class="nav-item" href="../index.html">
               <div class="material-icons-outlined mat-icon-center">home</div>
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
+              <span>Home</span>
+            </a>
+            <a class="nav-item" href="about.html">
               <div class="material-icons-outlined mat-icon-center">info</div>
-              <a href="about.html">About</a>
-            </li>
-            <li class="nav-item active">
-              <div class="material-icons mat-icon-center">work</div>
-              <a href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
+              <span>About</span>
+            </a>
+            <a class="nav-item active" href="projects.html">
+              <div class="active-container">
+                <div class="material-icons mat-icon-center">work</div>
+                <span class="underline-active">Projects</span>
+              </div>
+            </a>
+            <a class="nav-item" href="amazon.html">
               <div class="material-icons-outlined mat-icon-center">shopping_cart</div>
-              <a href="amazon.html">Amazon Recent Purchases</a>
-            </li>
-          </ul>
+              <span>Amazon Recent Purchases</span>
+            </a>
+          </div>
         </nav>
       </div>
     </div>
-    <main id="main" class="padding-top">
+    <main id="main" class="margin-top">
       <div class="top-alert">
         <span class="close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
         Only Grad school projects will have their own page (2020 and beyond)
       </div>
-      <h1 class="h1-formatted margin-bottom">My Projects.</h1>
-      <div class="projects-container">
-        <div class="project-container">
-          <a class="image-button bookcrossing" href="bookcrossing.html" aria-label="Learn more about BookrCrossing"></a>
-          <div class="top-line">
-            <div class="left">BookCrossing<span class="period period-green margin-left"></span></div>
-            <div class="right">Mobile Design</div>
-          </div>
-          <div class="description">Fall 2020</div>
-          <div class="description">Technolgies Used: Adobe XD, Figma</div>
-          <div class="description summary">A little free library locater application that is designed to accomodate explorers and librarians
-            who want to create a community through updating and finding this book sharing movement.
-          </div>
-          <div class="link-container">
-            <a class="btn background-green" href="bookcrossing.html" aria-label="Learn more about BookrCrossing">Learn More</a>
-          </div>
-        </div>
-        <div class="project-container">
-          <a class="image-button tyler-tech" href="https://www.tylertech.com/solutions/courts-public-safety/public-safety/law-enforcement-records-management" aria-label="Laern more about Tyler Technologies Record Management Software"></a>
-          <div class="top-line">
-            <div class="left">Records Management System<span class="period period-blue margin-left"></span></div>
-            <div class="right">Public Safety Solution</div>
-          </div>
-          <div class="description">Summer 2018 - Present</div>
-          <div class="description">Technolgies Used: C#, Angular, Javascript, Typescript Elastic Search, ASP.Net Framework, SQL</div>
-          <div class="description summary">Agencies need a records management solutions where they can quickly access mission-critical data,
-            identify trends, quickly sort and refine searches, and visualize information for easy, customizable data analysis.</div>
-          <div class="link-container">
-            <a class="btn" href="https://www.tylertech.com/solutions/courts-public-safety/public-safety/law-enforcement-records-managementl">Learn More</a>
-          </div>
-        </div>
-        <div class="project-container">
-          <div class="image-button arbor"></div>
-          <div class="top-line">
-            <div class="left">Arbor Dictionary<span class="period period-yellow margin-left"></span></div>
-            <div class="right">Web Development</div>
-          </div>
-          <div class="description">Fall 2018</div>
-          <div class="description">Technolgies Used: Elastic Search, Angular</div>
-          <div class="description summary">A dictionary website, similar to  Urban Dictionary, where newcomers to Ann Arbor can search, add and edit
-            local terms commonly learn through interacting with other locals.
-          </div>
-        </div>
-        <div class="project-container">
-          <a class="image-button alexa-cooks" href="https://www.youtube.com/watch?v=kfrUW8RPtbg" aria-label="Watch a video of AlexaCooks in action!"></a>
-          <div class="top-line">
-            <div class="left">AlexaCooks<span class="period period-red margin-left"></span></div>
-            <div class="right">Alexa Skill</div>
-          </div>
-          <div class="description">Spring 2018</div>
-          <div class="description">Technolgies Used: Python</div>
-          <div class="description summary">An Alexa skill aimed at amateur bakers who are overwhelmed following writtern recipes.
-             This application was designed to be a cooking assistent that delivers easy and interactive steps for hands-free instructions.
-          </div>
-          <div class="link-container">
-            <a class="btn background-red" href="https://www.youtube.com/watch?v=kfrUW8RPtbg">Watch Demo</a>
-          </div>
-        </div>
-        <div class="project-container">
-          <div class="image-button speakeasy"></div>
-          <div class="top-line">
-            <div class="left">SpeakEasy<span class="period period-green margin-left"></span></div>
-            <div class="right">iOS Application, User Design</div>
-          </div>
-          <div class="description">Fall 2017</div>
-          <div class="description">Technolgies Used: C, Swift</div>
-          <div class="description summary">An iOS speech recognition application designed for a former U of M student who suffered a brain aneurysm
-            and Siri could not comprehend his speech patterns. This application could record, translate and export the text to other applications
-            on his phone.
-          </div>
-        </div>
-      </div>
-      <h2 class="h2-formatted">Contact Me.</h2>
-      <hr class="non-footer-hr">
-      <div class="comment">If you have any questions or comments about any of the following projects, let me know, and I will get back to you as soon as possible!</div>
-      <div class="form-box">
-        <form action="https://formspree.io/f/xvodobvg" method="POST">
-          <fieldset>
-            <label for="name">Name</label>
-            <input class="contact-form-input" id="name" name="name" type="text" placeholder="Name">
-            <label for="email">Email</label>
-            <input class="contact-form-input" id="email" name="email" type="email" placeholder="Email">
-            <label for="message">Message</label>
-            <textarea class="contact-form-input" id="message" name="message" rows="5" placeholder="Type your message, questions or feedback about my projects here!"></textarea>
-            <div class="link-container margin-initial">
-              <input type="submit" value="Send"></input>
+      <div class="content-container">
+        <h1 class="h1-formatted">My Projects.</h1>
+        <div class="sub-text">Below are some of the projects that are driven by user-centered design principes.</div>
+        <div class="projects-container">
+          <div class="project-container">
+            <a class="image-button bookcrossing" href="bookcrossing.html" aria-label="Learn more about BookrCrossing"></a>
+            <div class="top-line">
+              <div class="left">BookCrossing<span class="period period-green margin-left"></span></div>
+              <div class="right">Mobile Design</div>
             </div>
-          </fieldset>
-        </form>
+            <div class="description small-details">Fall 2020</div>
+            <div class="description small-details">Technolgies Used: Adobe XD, Figma</div>
+            <div class="description summary">A little free library locater application that is designed to accomodate explorers and librarians
+              who want to create a community through updating and finding this book sharing movement.
+            </div>
+            <div class="link-container-bottom">
+              <a class="btn background-green dark-green-hover" href="bookcrossing.html" aria-label="Learn more about BookrCrossing">Learn More</a>
+            </div>
+          </div>
+          <div class="project-container">
+            <a class="image-button tyler-tech" href="https://www.tylertech.com/solutions/courts-public-safety/public-safety/law-enforcement-records-management" aria-label="Laern more about Tyler Technologies Record Management Software"></a>
+            <div class="top-line">
+              <div class="left">Records Management System<span class="period period-blue margin-left"></span></div>
+              <div class="right">Public Safety Solution</div>
+            </div>
+            <div class="description small-details extra-margin">Summer 2018 - Present</div>
+            <div class="description small-details">Technolgies Used: C#, Angular, Javascript, Typescript Elastic Search, ASP.Net Framework, SQL</div>
+            <div class="description summary remove-line">Agencies need a records management solutions where they can quickly access mission-critical data,
+              identify trends, quickly sort and refine searches, and visualize information for easy, customizable data analysis.</div>
+              <div class="link-container-bottom">
+              <a class="btn dark-blue-hover" href="https://www.tylertech.com/solutions/courts-public-safety/public-safety/law-enforcement-records-managementl">Learn More</a>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="image-button arbor"></div>
+            <div class="top-line">
+              <div class="left">Arbor Dictionary<span class="period period-yellow margin-left"></span></div>
+              <div class="right">Web Development</div>
+            </div>
+            <div class="description small-details">Fall 2018</div>
+            <div class="description small-details">Technolgies Used: Elastic Search, Angular</div>
+            <div class="description summary no-button">A dictionary website, similar to  Urban Dictionary, where newcomers to Ann Arbor can search, add and edit
+              local terms commonly learn through interacting with other locals.
+            </div>
+          </div>
+          <div class="project-container">
+            <a class="image-button alexa-cooks" href="https://www.youtube.com/watch?v=kfrUW8RPtbg" aria-label="Watch a video of AlexaCooks in action!"></a>
+            <div class="top-line">
+              <div class="left">AlexaCooks<span class="period period-red margin-left"></span></div>
+              <div class="right">Alexa Skill</div>
+            </div>
+            <div class="description small-details extra-margin">Spring 2018</div>
+            <div class="description small-details">Technolgies Used: Python</div>
+            <div class="description summary">An Alexa skill aimed at amateur bakers who are overwhelmed following writtern recipes.
+               This application was designed to be a cooking assistent that delivers easy and interactive steps for hands-free instructions.
+            </div>
+            <div class="link-container-bottom">
+              <a class="btn background-red dark-red-hover" href="https://www.youtube.com/watch?v=kfrUW8RPtbg">Watch Demo</a>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="image-button speakeasy"></div>
+            <div class="top-line">
+              <div class="left">SpeakEasy<span class="period period-green margin-left"></span></div>
+              <div class="right">iOS Application, User Design</div>
+            </div>
+            <div class="description small-details">Fall 2017</div>
+            <div class="description small-details">Technolgies Used: C, Swift</div>
+            <div class="description summary no-button">An iOS speech recognition application designed for a former U of M student who suffered a brain aneurysm
+              and Siri could not comprehend his speech patterns. This application could record, translate and export the text to other applications
+              on his phone.
+            </div>
+          </div>
+        </div>
+        <h2 class="h2-formatted">Contact Me.</h2>
+        <hr class="non-footer-hr">
+        <div class="comment">If you have any questions or comments about any of the following projects, let me know, and I will get back to you as soon as possible!</div>
+        <div class="form-box">
+          <form action="https://formspree.io/f/xvodobvg" method="POST">
+            <fieldset>
+              <label for="name">Name</label>
+              <input class="contact-form-input" id="name" name="name" type="text" placeholder="Name">
+              <label for="email">Email</label>
+              <input class="contact-form-input" id="email" name="email" type="email" placeholder="Email">
+              <label for="message">Message</label>
+              <textarea class="contact-form-input" id="message" name="message" rows="5" placeholder="Type your message, questions or feedback about my projects here!"></textarea>
+              <div class="link-container margin-initial">
+                <input type="submit" value="Send"></input>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </main>
       <footer>

@@ -13,183 +13,217 @@
     <script src="../scripts.js"></script>
     <title>Chris Lebioda | My Amzaon</title>
   </head>
-  <body onload="randomQuotes()">
+  <body class="background-color" onload="randomQuotes()">
     <a class="skip" href="#main">Skip to Main Content</a>
     <div class="topnav">
       <div role="banner" class="nav-container">
-        <p class="title-left">Chris Lebioda |</p>
-        <p class="title-right">My Amazon</p>
+        <div class="fake-logo">
+          <p class="title-left">Chris Lebioda |</p>
+          <p class="title-right">My Amazon</p>
+        </div>
         <nav>
           <button onclick="myFunction()" class="hamburger">
             <span class="material-icons">menu</span>
           </button>
-          <ul class="menu">
-            <li class="nav-item">
+          <div class="menu">
+            <a class="nav-item" href="../index.html">
               <div class="material-icons-outlined mat-icon-center">home</div>
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
+              <span>Home</span>
+            </a>
+            <a class="nav-item" href="about.html">
               <div class="material-icons-outlined mat-icon-center">info</div>
-              <a href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <div class="material-icons mat-icon-center">work_outline</div>
-              <a href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item active">
-              <div class="material-icons mat-icon-center">shopping_cart</div>
-              <a href="amazon.html">Amazon Recent Purchases</a>
-            </li>
-          </ul>
+              <span>About</span>
+            </a>
+            <a class="nav-item" href="projects.html">
+              <div class="material-icons mat-icon-center">work</div>
+              <span>Projects</span>
+            </a>
+            <a class="nav-item active" href="amazon.html">
+              <div class="active-container">
+                <div class="material-icons mat-icon-center">shopping_cart</div>
+                <span class="underline-active">Amazon Recent Purchases</span>
+              </div>
+            </a>
+          </div>
         </nav>
       </div>
     </div>
-    <main id="main" class="padding-top">
+    <main id="main" class="margin-top">
       <div class="top-alert">
         <span class="close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
         Last Updated April 5, 2021
       </div>
-      <h1 class="h1-formatted">My Amazon Recent Purchases.</h1>
-        <div class="sub-text">I think you can learn a lot about someone based on the packages they get on their door stop, so here is what I buy.</div>
-        <div class="cards-container">
-          <div class="card green-border">
-            <div class="image">
-              <img src="../images/amazon/steak_seasoning.jpg" alt="">
+      <div class="content-container">
+        <h1 class="h1-formatted">My Amazon Recent Purchases.</h1>
+          <div class="sub-text">I think you can learn a lot about someone based on the packages they get on their door stop, so here is what I buy.</div>
+          <div class="cards-container">
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/steak_seasoning.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/McCormick-Montreal-Steak-Seasoning-Bottle/dp/B003U7OQC8">McCormick Grill Mates Montreal Steak Seasoning, 3.40 OZ (Pack - 3)</a>
+                <p>Order Placed: March 27, 2021</p>
+                <div class="why-text">Why I Purchased: It is actually impossible to find these at the store right now. I also like the smaller ones because I can take them camping
+                  <span class="period period-small period-green"></span>
+                </div>
+              </div>
             </div>
-            <div class="text">
-              <a href="https://www.amazon.com/McCormick-Montreal-Steak-Seasoning-Bottle/dp/B003U7OQC8">McCormick Grill Mates Montreal Steak Seasoning, 3.40 OZ (Pack - 3)</a>
-              <p>Order Placed: March 27, 2021</p>
-              <div class="why-text">Why I Purchased: It is actually impossible to find these at the store right now. I also like the smaller ones because I can take them camping</div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/hair_product.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/Baxter-California-Clay-Pomade-fl/dp/B000MIKEZQ">Baxter of California Clay Pomade, Matte Finish/Strong Hold, Hair Pomade for Men, 2 fl. Oz</a>
+                <p>Order Placed: March 29, 2021</p>
+                <div class="why-text">Why I Purchased: This is the hair product I use and I was running out
+                  <span class="period period-small period-yellow"></span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card yellow-border">
-            <div class="image">
-              <img src="../images/amazon/hair_product.jpg" alt="">
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/evo_arms.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/EVEO-Premium-Dual-Monitor-Mount/dp/B07V1J81FB">Acer Nitro VG240Y Pbiip 23.8 Inches Full HD (1920 x 1080) IPS Gaming Monitor with AMD Radeon FreeSync Technology, Zero Frame, 144Hz, 1ms VRB, (2 x HDMI 2.0 Ports & 1 x Display Port), Black</a>
+                <p>Order Placed: March 12, 2021</p>
+                <div class="why-text">Why I Purchased: Gave my friend the option of getting a monitor and a computer arm, a mechanical keyboard or a 27-inch monitor and he choose this and the 24 inch monitor
+                  <span class="period period-small period-red"></span>
+                </div>
+              </div>
             </div>
-            <div class="text">
-              <a href="https://www.amazon.com/Baxter-California-Clay-Pomade-fl/dp/B000MIKEZQ">Baxter of California Clay Pomade, Matte Finish/Strong Hold, Hair Pomade for Men, 2 fl. Oz</a>
-              <p>Order Placed: March 29, 2021</p>
-              <div class="why-text"><span>Why I Purchased:</span> This is the hair product I use and I was running out</div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/acer_monitor.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/Acer-VG240Y-Pbiip-FREESYNC-Technology/dp/B07VFPYRP3">Dual Monitor Stand - Dual Monitor Mount, VESA Mount (75x75 100x100), Dual Monitor Arm Fit 17 Inch to 32 Inch VESA Compatible Screens, Full Motion Spring Movement Monitor Desk Mount, Monitor Stands</a>
+                <p>Order Placed: March 12, 2021</p>
+                <div class="why-text">Why I Purchased: Gave my friend the option of getting a monitor (24 inch) and a computer arm, a mechanical keyboard or a 27-inch monitor and he choose this and the arm
+                  <span class="period period-small period-green"></span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card red-border">
-            <div class="image">
-              <img src="../images/amazon/evo_arms.jpg" alt="">
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/pens.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/Pilot-Razor-Marker-Ultra-Fine-11045/dp/B00EKFJLGU">Pilot Razor Point Fine Line Marker Pens, Ultra-Fine 0.3mm Point, Black / Blue / Red, Pack of 4 (PIL 11045)</a>
+                <p>Order Placed: March 6, 2021</p>
+                <div class="why-text">Why I Purchased: Favorite pens and I needed a new red and never owned a blue one
+                  <span class="period period-small period-yellow"></span>
+                </div>
+              </div>
             </div>
-            <div class="text">
-              <a href="https://www.amazon.com/EVEO-Premium-Dual-Monitor-Mount/dp/B07V1J81FB">Acer Nitro VG240Y Pbiip 23.8 Inches Full HD (1920 x 1080) IPS Gaming Monitor with AMD Radeon FreeSync Technology, Zero Frame, 144Hz, 1ms VRB, (2 x HDMI 2.0 Ports & 1 x Display Port), Black</a>
-              <p>Order Placed: March 12, 2021</p>
-              <div class="why-text">Why I Purchased: Gave my friend the option of getting a monitor and a computer arm, a mechanical keyboard or a 27-inch monitor and he choose this and the 24 inch monitor</div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/wingspan.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/Stonemaier-Games-Wingspan-Swift-Start/dp/B07YQ641NQ">Wingspan Board Game - A Bird-Collection, Engine-Building Stonemaier Game for 1-5 Players, Ages 14+</a>
+                <p>Order Placed: March 1, 2021</p>
+                <div class="why-text">Why I Purchased: Colorful game and played it with my siblings once
+                  <span class="period period-small period-red"></span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card blue-border">
-            <div class="image">
-              <img src="../images/amazon/acer_monitor.jpg" alt="">
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/tangerine_wedges.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/Dried-Tangerine-Wedges-ounce-Bag/dp/B0745XSPFJ">Dried Tangerine Wedges 20 ounce Bag</a>
+                <p>Order Placed: February 17, 2021</p>
+                <div class="why-text">Why I Purchased: Bougie snack I had at my girlfriend's grandparents
+                  <span class="period period-small period-green"></span>
+                </div>
+              </div>
             </div>
-            <div class="text">
-              <a href="https://www.amazon.com/Acer-VG240Y-Pbiip-FREESYNC-Technology/dp/B07VFPYRP3">Dual Monitor Stand - Dual Monitor Mount, VESA Mount (75x75 100x100), Dual Monitor Arm Fit 17 Inch to 32 Inch VESA Compatible Screens, Full Motion Spring Movement Monitor Desk Mount, Monitor Stands</a>
-              <p>Order Placed: March 12, 2021</p>
-              <div class="why-text">Why I Purchased: Gave my friend the option of getting a monitor (24 inch) and a computer arm, a mechanical keyboard or a 27-inch monitor and he choose this and the arm</div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/hdmi_switch.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/NEWCARE-Switcher-Supports-HDCP2-2-Consoles/dp/B07RY7Y9PR">4K@60Hz HDMI Switch, NEWCARE HDMI Switch 3 in 1 Out, 3-Port HDMI Switcher Selector, Supports 4K, 3D, HDCP2.2, HDMI2.0, HDR, for Fire Stick 4K, HDTV, PS4/5, Game Consoles, PC</a>
+                <p>Order Placed: February 17, 2021</p>
+                <div class="why-text">Why I Purchased: Tired of going under my desk to change the input
+                  <span class="period period-small period-yellow"></span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card green-border">
-            <div class="image">
-              <img src="../images/amazon/pens.jpg" alt="">
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/usb_ethernet.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/uni-Ethernet-Internet-Compatible-Notebook/dp/B087QFQW6F">uni Ethernet Adapter, USB 3.0 to 10/100/1000 Gigabit Ethernet LAN Network Adapter, Driver Free RJ45 Internet Adapter Compatible for MacBook, Surface Pro, Notebook PC with Windows7/8/10, XP, Vista, Mac</a>
+                <p>Order Placed: February 13, 2021</p>
+                <div class="why-text">Why I Purchased: The GPU on my PC died so I wanted to game on my laptop and wanted the best internet
+                  <span class="period period-small period-red"></span>
+                </div>
+              </div>
             </div>
-            <div class="text">
-              <a href="https://www.amazon.com/Pilot-Razor-Marker-Ultra-Fine-11045/dp/B00EKFJLGU">Pilot Razor Point Fine Line Marker Pens, Ultra-Fine 0.3mm Point, Black / Blue / Red, Pack of 4 (PIL 11045)</a>
-              <p>Order Placed: March 6, 2021</p>
-              <div class="why-text">Why I Purchased: Favorite pens and I needed a new red and never owned a blue one</div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/usb_dock.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/Anker-Extended-MacBook-Surface-Notebook/dp/B07L32B9C2">Anker 4-Port USB 3.0 Hub, Ultra-Slim Data USB Hub with 2 ft Extended Cable [Charging Not Supported], for MacBook, Mac Pro, Mac mini, iMac, Surface Pro, XPS, PC, Flash Drive, Mobile HDD</a>
+                <p>Order Placed: February 13, 2021</p>
+                <div class="why-text">Why I Purchased: The XPS 13 only has 2 USB's and I needed 4
+                  <span class="period period-small period-green"></span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card yellow-border">
-            <div class="image">
-              <img src="../images/amazon/wingspan.jpg" alt="">
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/cerave.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/CeraVe-Salicylic-Cleanser-Exfoliating-Fragrance/dp/B00U1YCRD8">CeraVe Salicylic Acid Cleanser | 8 Ounce, Pack of 2 | Renewing Exfoliating Face Wash with Vitamin D for Rough and Bumpy Skin | Fragrance Free</a>
+                <p>Order Placed: February 11, 2021</p>
+                <div class="why-text">Why I Purchased: I could not find this body lotion at Rite Aid
+                  <span class="period period-small period-yellow"></span>
+                </div>
+              </div>
             </div>
-            <div class="text">
-              <a href="https://www.amazon.com/Stonemaier-Games-Wingspan-Swift-Start/dp/B07YQ641NQ">Wingspan Board Game - A Bird-Collection, Engine-Building Stonemaier Game for 1-5 Players, Ages 14+</a>
-              <p>Order Placed: March 1, 2021</p>
-              <div class="why-text">Why I Purchased: Colorful game and played it with my siblings once</div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/puzzle_totoro.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/ensky-Neighbor-Totoro-Fishing-1000-Piece/dp/B0002YN0FG">ensky My Neighbor Totoro Fishing Jigsaw Puzzle (1000-Piece)</a>
+                <p>Order Placed: February 13, 2021</p>
+                <div class="why-text">Why I Purchased: Birthday gift for my older sister
+                  <span class="period period-small period-red"></span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card red-border">
-            <div class="image">
-              <img src="../images/amazon/tangerine_wedges.jpg" alt="">
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/7wonders_duel.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/Asmodee-SEV07-7-Wonders-Duel/dp/B014DMSTXK">Asmodee 7 Wonders - Duel, Multi-colored</a>
+                <p>Order Placed: February 3, 2021</p>
+                <div class="why-text">Why I Purchased: Gift for my friend's girlfriend who likes to play board games with him
+                  <span class="period period-small period-green"></span>
+                </div>
+              </div>
             </div>
-            <div class="text">
-              <a href="https://www.amazon.com/Dried-Tangerine-Wedges-ounce-Bag/dp/B0745XSPFJ">Dried Tangerine Wedges 20 ounce Bag</a>
-              <p>Order Placed: February 17, 2021</p>
-              <div class="why-text">Why I Purchased: Bougie snack I had at my girlfriend's grandparents</div>
-            </div>
-          </div>
-          <div class="card blue-border">
-            <div class="image">
-              <img src="../images/amazon/hdmi_switch.jpg" alt="">
-            </div>
-            <div class="text">
-              <a href="https://www.amazon.com/NEWCARE-Switcher-Supports-HDCP2-2-Consoles/dp/B07RY7Y9PR">4K@60Hz HDMI Switch, NEWCARE HDMI Switch 3 in 1 Out, 3-Port HDMI Switcher Selector, Supports 4K, 3D, HDCP2.2, HDMI2.0, HDR, for Fire Stick 4K, HDTV, PS4/5, Game Consoles, PC</a>
-              <p>Order Placed: February 17, 2021</p>
-              <div class="why-text">Why I Purchased: Tired of going under my desk to change the input</div>
-            </div>
-          </div>
-          <div class="card green-border">
-            <div class="image">
-              <img src="../images/amazon/usb_ethernet.jpg" alt="">
-            </div>
-            <div class="text">
-              <a href="https://www.amazon.com/uni-Ethernet-Internet-Compatible-Notebook/dp/B087QFQW6F">uni Ethernet Adapter, USB 3.0 to 10/100/1000 Gigabit Ethernet LAN Network Adapter, Driver Free RJ45 Internet Adapter Compatible for MacBook, Surface Pro, Notebook PC with Windows7/8/10, XP, Vista, Mac</a>
-              <p>Order Placed: February 13, 2021</p>
-              <div class="why-text">Why I Purchased: The GPU on my PC died so I wanted to game on my laptop and wanted the best internet</div>
-            </div>
-          </div>
-          <div class="card yellow-border">
-            <div class="image">
-              <img src="../images/amazon/usb_dock.jpg" alt="">
-            </div>
-            <div class="text">
-              <a href="https://www.amazon.com/Anker-Extended-MacBook-Surface-Notebook/dp/B07L32B9C2">Anker 4-Port USB 3.0 Hub, Ultra-Slim Data USB Hub with 2 ft Extended Cable [Charging Not Supported], for MacBook, Mac Pro, Mac mini, iMac, Surface Pro, XPS, PC, Flash Drive, Mobile HDD</a>
-              <p>Order Placed: February 13, 2021</p>
-              <div class="why-text">Why I Purchased: The XPS 13 only has 2 USB's and I needed 4</div>
-            </div>
-          </div>
-          <div class="card red-border">
-            <div class="image">
-              <img src="../images/amazon/cerave.jpg" alt="">
-            </div>
-            <div class="text">
-              <a href="https://www.amazon.com/CeraVe-Salicylic-Cleanser-Exfoliating-Fragrance/dp/B00U1YCRD8">CeraVe Salicylic Acid Cleanser | 8 Ounce, Pack of 2 | Renewing Exfoliating Face Wash with Vitamin D for Rough and Bumpy Skin | Fragrance Free</a>
-              <p>Order Placed: February 11, 2021</p>
-              <div class="why-text">Why I Purchased: I could not find this body lotion at Rite Aid</div>
-            </div>
-          </div>
-          <div class="card blue-border">
-            <div class="image">
-              <img src="../images/amazon/puzzle_totoro.jpg" alt="">
-            </div>
-            <div class="text">
-              <a href="https://www.amazon.com/ensky-Neighbor-Totoro-Fishing-1000-Piece/dp/B0002YN0FG">ensky My Neighbor Totoro Fishing Jigsaw Puzzle (1000-Piece)</a>
-              <p>Order Placed: February 13, 2021</p>
-              <div class="why-text">Why I Purchased: Birthday gift for my older sister</div>
-            </div>
-          </div>
-          <div class="card green-border">
-            <div class="image">
-              <img src="../images/amazon/7wonders_duel.jpg" alt="">
-            </div>
-            <div class="text">
-              <a href="https://www.amazon.com/Asmodee-SEV07-7-Wonders-Duel/dp/B014DMSTXK">Asmodee 7 Wonders - Duel, Multi-colored</a>
-              <p>Order Placed: February 3, 2021</p>
-              <div class="why-text">Why I Purchased: Gift for my friend's girlfriend who likes to play board games with him</div>
-            </div>
-          </div>
-          <div class="card yellow-border">
-            <div class="image">
-              <img src="../images/amazon/wavelength.jpg" alt="">
-            </div>
-            <div class="text">
-              <a href="https://www.amazon.com/Monikers-WAV01-Wavelength/dp/B07T446163">Wavelength</a>
-              <p>Order Placed: January 7, 20211</p>
-              <div class="why-text">Why I Purchased: Wanted this for Christmas, but it was sold out for monthes</div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/amazon/wavelength.jpg" alt="">
+              </div>
+              <div class="text">
+                <a href="https://www.amazon.com/Monikers-WAV01-Wavelength/dp/B07T446163">Wavelength</a>
+                <p>Order Placed: January 7, 20211</p>
+                <div class="why-text">Why I Purchased: Wanted this for Christmas, but it was sold out for monthes
+                  <span class="period period-small period-yellow"></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

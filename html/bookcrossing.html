@@ -16,155 +16,203 @@
   <body onload="randomQuotes()">
     <a class="skip" href="#main">Skip to Main Content</a>
     <div class="topnav">
-      <div role="banner" class="nav-container">
-        <p class="title-left">Chris Lebioda |</p>
-        <p class="title-right">BookCrossing</p>
+        <div role="banner" class="nav-container">
+          <div class="fake-logo">
+            <p class="title-left">Chris Lebioda |</p>
+            <p class="title-right">BookCrossing</p>
+          </div>
+        <nav>
+          <button onclick="myFunction()" class="hamburger">
+            <span class="material-icons">menu</span>
+          </button>
+          <div class="menu">
+            <a class="nav-item" href="../index.html">
+              <div class="material-icons-outlined mat-icon-center">home</div>
+              <span>Home</span>
+            </a>
+            <a class="nav-item" href="about.html">
+              <div class="material-icons-outlined mat-icon-center">info</div>
+              <span>About</span>
+            </a>
+            <a class="nav-item active" href="projects.html">
+              <div class="material-icons mat-icon-center">work</div>
+              <span class="underline-active">Projects</span>
+            </a>
+            <a class="nav-item" href="amazon.html">
+              <div class="material-icons-outlined mat-icon-center">shopping_cart</div>
+              <span>Amazon Recent Purchases</span>
+            </a>
+          </div>
+        </nav>
       </div>
-      <nav>
-        <button onclick="myFunction()" class="hamburger">
-          <span class="material-icons">menu</span>
-        </button>
-        <ul class="menu">
-          <li class="nav-item">
-            <div class="material-icons-outlined mat-icon-center">home</div>
-            <a href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <div class="material-icons-outlined mat-icon-center">info</div>
-            <a href="about.html">About</a>
-          </li>
-          <li class="nav-item active">
-            <div class="material-icons mat-icon-center">work</div>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <div class="material-icons-outlined mat-icon-center">shopping_cart</div>
-            <a href="amazon.html">Amazon Recent Purchases</a>
-          </li>
-        </ul>
-      </nav>
     </div>
-    <main id="main" class="padding-top">
-      <div class="title-heading">
-        <h1>BookCrossing<span class="period period-green margin-left"></span></h1>
-        <p>A Mobile Design Prototype<span class="period period-green margin-left"></span></p>
-      </div>
-      <div class="content">
-        <p>BookCrossing is an app my team and I prototyped for the class SI 582: Interaction Design. We decided to develop a
-          prototype of a mobile application for Little Free Libraries because although they have a website that includes a map
-          to show you where all the libraries are located, it is not user friendly and limites the abiltity to create and sustain
-          a community to expand book access for all.</p>
-        <div class="section">
-          <h2>Overview<span class="period period-yellow margin-left"></span></h2>
-          <div class="paragraph">
-            <h3>Background<span class="period period-yellow margin-left"></span></h3>
-            <p>Little Free Libraries is a great organization for avid readers to expand book access for all through a global network of
-              volunteer-led little libraries, however, their website, specifically the map, is not mobile friendly and makes it
-              difficult to find libraries on-the-go. Local residents who do not want to walk aimlessly through their neighborhood
-              would have to look up a library on the web and input the library address into a navigation application, which adds
-              extra steps to the process. These walkers do not want to have to go home and use their computer to look up more libraries,
-              they want an instantaneous way to see other libraries nearby and detour to see them.</p>
-          </div>
-          <div class="paragraph">
-            <h3>Problem<span class="period period-yellow margin-left"></span></h3>
-            <div class="grid-container-bookcrossing">
-            <p>Looking at the picture below, the current mobile view of their map requires the user to input some necessary information
-              in order to see any of the libraries in that area. The libraries on the map only have one picture available (that the user cannot
-              increase in size to see it), the name, and the location). The quickest way to get directions to this library near you would require you
-              to copy the latitude/longitude or address, open up a directions application, paste the text and then search for your location. Once
-              you to the library you were dying to see, you have no way of expressing your gratitude to the owner for the new book you just found or
-              the design of their bookcase.</p>
-            <img src="../images/bookcrossing/lfl_map.PNG" alt="">
-          </div>
-          </div>
-          <div class="paragraph">
-            <h3>Technologies Used<span class="period period-yellow margin-left"></span></h3>
-            <p>Figma, Adobe XD, paper prototypes and wire frames </p>
-            </div>
-          </div>
-        <div class="section">
-          <h2>Solution<span class="period period-red margin-left"></span></h2>
-          <div class="paragraph">
-            <h3>Users<span class="period period-red margin-left"></span></h3>
-            <p>The primary users that we are targeting are local neighborhood residents who often take walks and enjoy spending their free time
-              exploring. Other potential users consist of those who create public bookcases and want to know how people feel about them and
-              create a community through their love of sharing books. Additionally, parents of children of poverty will be able to access the
-              free libraries in order to support their education.</p>
-          </div>
-          <div class="paragraph">
-            <h3>Settings<span class="period period-red margin-left"></span></h3>
-            <div class="grid-container-bookcrossing">
-              <p>Like most mobile applications, we gave our users the ability to opt out of recieving push notifications for directions add
-                nearby libraries and the ability to turn of location tracking. Library owners can verify their email and their library
-                with the organization in order to claim their library and be able to edit their library page and approve or decline comments
-                and pictures from people who have visited.</p>
-              <img src="../images/bookcrossing/settings.PNG" alt="Settings Page for BookCrossing">
-            </div>
-            <div class="grid-container-bookcrossing2">
-              <p>Througout interviewing current little libray owners, one of their main concerns was
-                privacy. Some owners do not want to give out their address and would rather have people stumble upon their library. We added
-                hidden libraries to our applicatoin which will not show their address, but still has a profile where users can post their pictures
-                and comments. </p>
-              <img src="../images/bookcrossing/hidden-library.PNG" alt="Library Profile Page of a library without an address">
-            </div>
-          </div>
-          <div class="paragraph">
-            <h3>Map and List View<span class="period period-red margin-left"></span></h3>
-            <p>Upon opening the application, the user is either met with a List View of all the libraries near them or a Map View depending
-              on their preferences. The map view contains three buttons in the bottom right corner. The light green buttons shows the
-              amount of hidden libraries near them as well as explains what hidden libraries are. During user testings, users were confused
-              as to why more libraries were populated on the list view compared to the map, so we added this clarification. The white button
-              allows users to add a new library they find that is not currently in little free libraries database. The green button toggles
-              between the list view and the map view.</p>
-            <img src="../images/bookcrossing/map-view.PNG" alt="Map of all little free libraries near you">
-            <p>Clicking on the library icon brings up a preview of the library profile where the user can see the name, the distance,
-              the address (if available), a button that brings up a directions screen, and a button to the library's full profile. We created
-              two views for the libraries because some users want to find the nearest library while they are on their walk in order to have
-              an end goal to their walk. The map view exists so users have a digestable medium which shows them all options.
-            </p>
-            <p>Throughout our interations, one aspect we got comments on was consistent thoughout the application. One of our original
-              designs had the toggle button in the top left corner of the list view, but near the bottom right corner of the map view
-              because of the available space. This lead us to creating a pop out menu on the list view to keep the placement of the buttons
-              at the same location on both views since they serve the same function.
-            </p>
-            <img src="../images/bookcrossing/list-view.PNG" alt="List of all little free libraries near you">
+    <main id="main" class="margin-top">
+      <div class="content-container book-crossing-content-container">
+        <div class="title-heading">
+          <h1>BookCrossing<span class="period period-green margin-left"></span></h1>
+          <p>A Mobile Design Prototype<span class="period period-green margin-left"></span></p>
+        </div>
+        <div class="content">
+          <p class="content-margin">BookCrossing is an app my team and I prototyped for the class SI 582: Interaction Design. We decided to develop a
+            prototype of a mobile application for Little Free Libraries because although they have a website that includes a map
+            to show you where all the libraries are located, it is not user friendly and limites the abiltity to create and sustain
+            a community to expand book access for all.</p>
+          <div class="section">
+            <h2 id="overview">Overview<span class="period period-yellow margin-left"></span></h2>
             <div class="paragraph">
+              <h3>Background<span class="period period-yellow margin-left"></span></h3>
+              <p>Little Free Library is a great organization for avid readers to expand book access for all through a global network of
+                volunteer-led little libraries, however, their website, specifically the map, is not mobile friendly and makes it
+                difficult to find libraries on-the-go. Local residents who do not want to walk aimlessly through their neighborhood
+                would have to look up a library on the web and input the library address into a navigation application, which adds
+                extra steps to the process. These walkers do not want to have to go home and use their computer to look up more libraries,
+                they want an instantaneous way to see other libraries nearby and detour to see them.</p>
+            </div>
+            <div id="problem" class="paragraph">
+              <h3>Problem<span class="period period-yellow margin-left"></span></h3>
+              <div class="grid-container-bookcrossing">
+              <p>Looking at the picture below, the current mobile view of their map requires the user to input some necessary information
+                in order to see any of the libraries in that area. The libraries on the map only have one picture available (that the user cannot
+                increase in size to see it), the name, and the location). The quickest way to get directions to this library near you would require you
+                to copy the latitude/longitude or address, open up a direction's application, paste the text and then search for your location. Once
+                you to the library you were dying to see, you have no way of expressing your gratitude to the owner for the new book you just found or
+                the design of their bookcase.</p>
+              <a href="#image1">
+                <img src="../images/bookcrossing/lfl_map.PNG" alt="Little Free Library Organization library locator">
+              </a>
+              <a href="#problem" class="lightbox" id="image1">
+                <span class="lfl-image"></span>
+              </a>
+            </div>
+            </div>
+            <div class="paragraph">
+              <h3>Technologies Used<span class="period period-yellow margin-left"></span></h3>
+              <p>Figma, Adobe XD, paper prototypes and wire frames </p>
+              </div>
+            </div>
+          <div class="section">
+            <h2>Solution<span class="period period-red margin-left"></span></h2>
+            <div class="paragraph">
+              <h3>Users<span class="period period-red margin-left"></span></h3>
+              <p>The primary users that we are targeting are local neighborhood residents who often take walks and enjoy spending their free time
+                exploring. Other potential users consist of those who create public bookcases and want to know how people feel about them and
+                create a community through their love of sharing books. Additionally, parents of children of poverty will be able to access the
+                free libraries in order to support their education.</p>
+            </div>
+            <div id="setting" class="paragraph">
+              <h3>Settings<span class="period period-red margin-left"></span></h3>
+              <div class="grid-container-bookcrossing">
+                <p>Like most mobile applications, we gave our users the ability to opt out of receiving push notifications for directions add
+                  nearby libraries and the ability to turn of location tracking. Library owners can verify their email and their library
+                  with the organization in order to claim their library and be able to edit their library page and approve or decline comments
+                  and pictures from people who have visited.</p>
+                <a href="#image2">
+                  <img src="../images/bookcrossing/settings.PNG" alt="Settings Page for BookCrossing">
+                </a>
+                <a href="#setting" class="lightbox" id="image2">
+                  <span class="setting-image"></span>
+                </a>
+              </div>
+              <div id="hidden-library" class="grid-container-bookcrossing2">
+                <p>Throughout interviewing current little library  owners, one of their main concerns was
+                  privacy. Some owners do not want to give out their address and would rather have people stumble upon their library. We added
+                  hidden libraries to our application which will not show their address, but still has a profile where users can post their pictures
+                  and comments. </p>
+                <a href="#image3">
+                  <img src="../images/bookcrossing/hidden-library.PNG" alt="Library Profile Page of a library without an address">
+                </a>
+                <a href="#hidden-library" class="lightbox" id="image3">
+                  <span class="hidden-library-image"></span>
+                </a>
+              </div>
+            </div>
+            <div id="Map-View"class="paragraph">
+              <h3>Map and List View<span class="period period-red margin-left"></span></h3>
+              <div class="grid-container-bookcrossing">
+                <p>Upon opening the application, the user is either met with a List View of all the libraries near them or a Map View depending
+                  on their preferences. The map view contains three buttons in the bottom right corner. The light green buttons show the
+                  amount of hidden libraries near them as well as explains what hidden libraries are. During user testing, users were confused
+                  as to why more libraries were populated on the list view compared to the map, so we added this clarification. The white button
+                  allows users to add a new library they find that is not currently in little free libraries database. The green button toggles
+                  between the list view and the map view.</p>
+                <a href="#image4">
+                  <img src="../images/bookcrossing/map-view.PNG" alt="Map of all little free libraries near you">
+                </a>
+                <a href="#Map-View" class="lightbox" id="image4">
+                  <span class="map-view-image"></span>
+                </a>
+              </div>
+              <p>Clicking on the library icon brings up a preview of the library profile where the user can see the name, the distance,
+                the address (if available), a button that brings up a directions screen, and a button to the library's full profile. We created
+                two views for the libraries because some users want to find the nearest library while they are on their walk in order to have
+                an end goal to their walk. The map view exists so users have a digestible medium which shows them all options.
+              </p>
+              <div class="grid-container-bookcrossing">
+                <p>Throughout our interactions, one aspect we got comments on was consistent within the application. One of our original
+                  designs had the toggle button in the top left corner of the list view, but near the bottom right corner of the map view
+                  because of the available space. This lead us to creating a pop out menu on the list view to keep the placement of the buttons
+                  at the same location on both views since they serve the same function.
+                </p>
+                <a href="#image5">
+                  <img src="../images/bookcrossing/list-view.PNG" alt="List of all little free libraries near you">
+                </a>
+                <a href="#Map-View" class="lightbox" id="image5">
+                  <span class="list-view-image"></span>
+                </a>
+              </div>
+            </div>
+            <div id="edit" class="paragraph">
               <h3>Add and Editing a Library<span class="period period-red margin-left"></span></h3>
-                <p class="paragraph">Currently, if a librarian wants to add their library, they must send
-                an email to the Little Free Library organization and requesting it be added to the map. They are limited to one picture, a
-                short description, a name and an address. If a librarian wants to make another change later, they must send another email
-                and someone from the organization will manually update it. BookCrossing allows the librarian to make any updates within the
-                application where they can add multipe pictures (and use explorer submitted content) and instantaneously update their information
-                without a third party being inov. Librians can also accept or decline user submitted comments and pictures that can shown
-                on their profile.
-                <img src="../images/bookcrossing/edit_library.PNG" alt="">
-              </p>
+              <div class="grid-container-bookcrossing2">
+                <p>Currently, if a librarian wants to add their library, they must send
+                  an email to the Little Free Library organization and requesting it be added to the map. They are limited to one picture, a
+                  short description, a name and an address. If a librarian wants to make another change later, they must send another email
+                  and someone from the organization will manually update it. BookCrossing allows the librarian to make any updates within the
+                  application where they can add multiple pictures (and use explorer submitted content) and instantaneously update their information
+                  without a third party being involved. Librarians can also accept or decline user submitted comments and pictures that can shown
+                  on their profile.</p>
+                <a href="#image6">
+                  <img src="../images/bookcrossing/edit_library.PNG" alt="How a user would edit a library in our application">
+                </a>
+                <a href="#edit" class="lightbox" id="image6">
+                  <span class="edit-library-image"></span>
+                </a>
+              </div>
             </div>
-            <div class="paragraph">
+            <div id="profile" class="paragraph">
               <h3>Library Profile Page<span class="period period-red margin-left"></span></h3>
-                <p class="paragraph">One of the biggest issues with the current Little Free Library map is the simplistic library profile
-                page. Explorers cannot even contribute photo of them holding up their newly acquired book next to bookcase or give a
-                compliment to the owner on the design. BookCrossing's library profile pages not only shows them the name, description, location,
-                and a picture, but it enables users the ability to contribute to the community as well as see how other people have contributed
-                to a given library.
-                <img src="../images/bookcrossing/library-profile.PNG" alt="">
-              </p>
+              <div class="grid-container-bookcrossing">
+                <p>One of the biggest issues with the current Little Free Library map is the simplistic library profile
+                  page. Explorers cannot even contribute photo of them holding up their newly acquired book next to bookcase or give a
+                  compliment to the owner on the design. BookCrossing's library profile pages not only shows them the name, description, location,
+                  and a picture, but it enables users the ability to contribute to the community as well as see how other people have contributed
+                  to a given library.
+                </p>
+                <a href="#image7">
+                  <img src="../images/bookcrossing/library-profile.PNG" alt="">
+                </a>
+                <a href="#profile" class="lightbox" id="image7">
+                  <span class="library-profile-image"></span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="paragraph">
+          <div class="section">
             <h2>Video<span class="period period-blue margin-left"></span></h2>
+            <div class="paragraph">
               <p class="paragraph">Watch the video below for a full demo of the design!
-            </p>
-            <video controls>
-                <source src="../resources/BookCrossing_Final_Prototype.mp4" type="video/mp4">
-                <source src="../resources/BookCrossing_Final_Prototype.mp4" type="video/ogg">
-                  <track default
-                  kind="captions"
-                  srclang="en"
-                  src="../resources/bookcrossing_cc_en.vtt" />
-                Your browser does not support HTML video.
-            </video>
+              </p>
+              <video controls>
+                  <source src="../resources/BookCrossing_Final_Prototype.mp4" type="video/mp4">
+                  <source src="../resources/BookCrossing_Final_Prototype.mp4" type="video/ogg">
+                    <track default
+                    kind="captions"
+                    srclang="en"
+                    src="../resources/bookcrossing_cc_en.vtt" />
+                  Your browser does not support HTML video.
+              </video>
           </div>
+        </div>
         </div>
       </div>
     </main>

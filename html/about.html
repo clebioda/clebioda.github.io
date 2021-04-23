@@ -17,156 +17,160 @@
     <a class="skip" href="#main">Skip to Main Content</a>
     <div class="topnav">
       <div role="banner" class="nav-container">
-        <p class="title-left">Chris Lebioda |</p>
-        <p class="title-right">About Me</p>
+        <div class="fake-logo">
+          <p class="title-left">Chris Lebioda |</p>
+          <p class="title-right">About Me</p>
+        </div>
         <nav>
           <button onclick="myFunction()" class="hamburger">
             <span class="material-icons">menu</span>
           </button>
-          <ul class="menu">
-            <li class="nav-item">
+          <div class="menu">
+            <a class="nav-item" href="../index.html">
               <div class="material-icons-outlined mat-icon-center">home</div>
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <div class="material-icons mat-icon-center">info</div>
-              <a href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <div class="material-icons mat-icon-center">work_outline</div>
-              <a href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
+              <span>Home</span>
+            </a>
+            <a class="nav-item active" href="about.html">
+              <div class="material-icons-outlined mat-icon-center">info</div>
+              <span class="underline-active">About</span>
+            </a>
+            <a class="nav-item" href="projects.html">
+              <div class="material-icons mat-icon-center">work</div>
+              <span>Projects</span>
+            </a>
+            <a class="nav-item" href="amazon.html">
               <div class="material-icons-outlined mat-icon-center">shopping_cart</div>
-              <a href="amazon.html">Amazon Recent Purchases</a>
-            </li>
-          </ul>
+              <span>Amazon Recent Purchases</span>
+            </a>
+          </div>
         </nav>
       </div>
     </div>
-    <main id="main" class="padding-top">
-      <h1 class="h1-formatted">About Me.</h1>
-      <div class="grid-container-about">
-        <img class="profile-image" src="../images/about/profile-picture-1.jpg" alt="">
-        <img class="profile-image bottom-image" src="../images/about/profile-picture-2.jpg" alt="">
-        <div class="about-me-paragraph">
-           <span class="semibold">Hi, my name is Christoper James Lebioda.</span>
-           <p>I'm a part-time Graduate student at the University of Michigan studying User Experience Design/User-Centered Agile Design
-             at the University of Michigan within the School of Information. I previously got my undergraduate
-             degree at the U of M in Computer Science and Economics (check out the timeline on the home page for that
-             journey). As a future designer/developer, I want to <span class="highlight">shrink the technology gap for the elderly and children with
-             autism.</span>
-           </p>
-           <br>
-           <span class="semibold">I should have known I wanted to work with computers in some form or another early in life.</span>
-           <br>
-           <p>Growing up, my dad brought home interesting technology because he worked on the entertainment systems at
-             Ford. We had the luxery of being able to play Mario Kart on the N64 in the van because he needed real users
-             to test the system they were creating. Now that I am writing this, that was my first experience with user design!
-             Although the multiple systems he brought home through the years essentially worked the same, he was bridging the gap between
-             how things function and how things looked.
-           </p>
-           <br>
-           <p>As I left for college in 2013 and my dad slowly turned to the managing side of engineering, I noticed my dad still loves
-             technology (playing with Arduinos, figuring out how Chromecast works, etc.), but the cost of entry is much greater than
-             before. As technology advances and becomes integrated in or even replaces the most basic aspects of our daily lives, we need
-             to ensure the technology itself is <span class="highlight">accessible by all members of our society.</span> Although more and more technologies claim to be
-             accessible and inclusive, they often alienate and overwhelm older populations because most products inherently assume their
-             users have used something similar in the past. Even if we have the most sophisticated, robust, and well-implemented piece of
-             technology, if users cannot understand how it works with relative ease, then the design is a failure. Especially for older adults,
-             barriers like lack of instructions and guidance, complexity, and feelings of inadequacy drive them away from even the most
-             “accessible” technology. I believe if we better understand the <span class="highlight">perceptions of an older generation</span>, then we can design interfaces
-             for them and close the technology age gap.
-           </p>
-           <br>
+    <main id="main" class="margin-top">
+      <div class="content-container">
+        <h1 class="h1-formatted">About Me.</h1>
+        <div class="grid-container-about">
+          <img class="profile-image" src="../images/about/profile-picture-1.jpg" alt="">
+          <img class="profile-image bottom-image" src="../images/about/profile-picture-2.jpg" alt="">
+          <div class="about-me-paragraph">
+             <span class="semibold">Hi, my name is Christoper James Lebioda.</span>
+             <p>I'm a part-time Graduate student at the University of Michigan studying User Experience Design/User-Centered Agile Design
+               at the University of Michigan within the School of Information. I previously got my undergraduate
+               degree at the U of M in Computer Science and Economics (check out the timeline on the home page for that
+               journey). As a future designer/developer, I want to <span class="highlight">shrink the technology gap for the elderly and children with
+               autism.</span>
+             </p>
+             <br>
+             <span class="semibold">I should have known I wanted to work with computers in some form or another early in life.</span>
+             <br>
+             <p>Growing up, my dad brought home interesting technology because he worked on the entertainment systems at
+               Ford. We had the luxery of being able to play Mario Kart on the N64 in the van because he needed real users
+               to test the system they were creating. Now that I am writing this, that was my first experience with user design!
+               Although the multiple systems he brought home through the years essentially worked the same, he was bridging the gap between
+               how things function and how things looked.
+             </p>
+             <br>
+             <p>As I left for college in 2013 and my dad slowly turned to the managing side of engineering, I noticed my dad still loves
+               technology (playing with Arduinos, figuring out how Chromecast works, etc.), but the cost of entry is much greater than
+               before. As technology advances and becomes integrated in or even replaces the most basic aspects of our daily lives, we need
+               to ensure the technology itself is <span class="highlight">accessible by all members of our society.</span> Although more and more technologies claim to be
+               accessible and inclusive, they often alienate and overwhelm older populations because most products inherently assume their
+               users have used something similar in the past. Even if we have the most sophisticated, robust, and well-implemented piece of
+               technology, if users cannot understand how it works with relative ease, then the design is a failure. Especially for older adults,
+               barriers like lack of instructions and guidance, complexity, and feelings of inadequacy drive them away from even the most
+               “accessible” technology. I believe if we better understand the <span class="highlight">perceptions of an older generation</span>, then we can design interfaces
+               for them and close the technology age gap.
+             </p>
+             <br>
+          </div>
+        </div>
+        <div class="images-container">
+            <h2 class="h2-formatted exta-margin">Things I Like.</h2>
+            <div class="parallax space-parallax">
+            <div class="caption">
+              <span class="parallax-text background-green">Space LEGOs
+                <span class="period period-yellow"></span>
+               </span>
+            </div>
+            </div>
+            <div class="parallax board-game-parallax">
+            <div class="caption">
+              <span class="parallax-text black-text background-yellow">Board Games
+                <span class="period period-red"></span>
+              </span>
+            </div>
+           </div>
+           <div class="parallax asmr-parallax">
+            <div class="caption">
+              <span class="parallax-text background-red">ASMR
+                <span class="period period-green"></span>
+              </span>
+            </div>
+           </div>
+           <div class="parallax soccer-parallax">
+            <div class="caption">
+              <span class="parallax-text background-green">Soccer
+                <span class="period period-yellow"></span>
+              </span>
+            </div>
+           </div>
+           <div class="parallax big-dog-parallax">
+            <div class="caption">
+              <span class="parallax-text black-text background-yellow">Really Big Dogs
+                <span class="period period-red"></span>
+              </span>
+            </div>
+           </div>
+           <div class="parallax cooking-parallax">
+            <div class="caption">
+              <span class="parallax-text background-red">Trying to Cooking
+                <span class="period period-green"></span>
+              </span>
+            </div>
+           </div>
+           <div class="parallax sticky-notes-parallax">
+            <div class="caption">
+              <span class="parallax-text background-green">Lists on Post Its
+                <span class="period period-red"></span>
+              </span>
+            </div>
+           </div>
+           <div class="parallax pictured-rocks-parallax">
+            <div class="caption">
+              <span class="parallax-text black-text background-yellow">Camping/Hiking
+                <span class="period period-red"></span>
+              </span>
+            </div>
+           </div>
+        </div>
+        <div class="grid-container-exp-edu">
+          <div class="experience-container">
+            <h2 class="h2-formatted text-intial">Experience.</h2>
+            <div class="experience-item">
+              <div class="experience"> Software Engineer | February 2021 - Present</div>
+              <div class="experience_subheading"> Tyler Technologies - Troy, MI </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience"> Software Developer | May 2018 - February 2021</div>
+              <div class="experience_subheading"> Tyler Technologies - Troy, MI</div>
+            </div>
+          </div>
+          <div class="education-container">
+            <h2 class="h2-formatted text-intial">Education.</h2>
+            <div class="experience-item">
+              <div class="experience"> Univeristy of Michigan - Ann Arbor | Sept 2020 - Present</div>
+              <div class="experience_subheading"> Master of Science in Information - User-Centered Agile Development</div>
+            </div>
+            <div class="experience-item">
+              <div class="experience"> Univeristy of Michigan - Ann Arbor | Sept 2013 - Dec 2018</div>
+              <div class="experience_subheading"> Duel Bachelor of Science in Computer Science and Economics</div>
+            </div>
+          </div>
+        </div>
+        <div class="link-container">
+          <a class="white-btn" href="../resources/Chris-Lebioda-Resume.pdf" target="_blank">Full Resume</a>
         </div>
       </div>
-      <div class="images-container">
-          <h2 class="h2-formatted">Things I Like.</h2>
-          <div class="parallax space-parallax">
-          <div class="caption">
-            <span class="parallax-text background-green">Space LEGOs
-              <span class="period period-yellow"></span>
-             </span>
-          </div>
-          </div>
-          <div class="parallax board-game-parallax">
-          <div class="caption">
-            <span class="parallax-text black-text background-yellow">Board Games
-              <span class="period period-red"></span>
-            </span>
-          </div>
-         </div>
-         <div class="parallax asmr-parallax">
-          <div class="caption">
-            <span class="parallax-text background-red">ASMR
-              <span class="period period-green"></span>
-            </span>
-          </div>
-         </div>
-         <div class="parallax soccer-parallax">
-          <div class="caption">
-            <span class="parallax-text background-green">Soccer
-              <span class="period period-yellow"></span>
-            </span>
-          </div>
-         </div>
-         <div class="parallax big-dog-parallax">
-          <div class="caption">
-            <span class="parallax-text black-text background-yellow">Really Big Dogs
-              <span class="period period-red"></span>
-            </span>
-          </div>
-         </div>
-         <div class="parallax cooking-parallax">
-          <div class="caption">
-            <span class="parallax-text background-red">Trying to Cooking
-              <span class="period period-green"></span>
-            </span>
-          </div>
-         </div>
-         <div class="parallax sticky-notes-parallax">
-          <div class="caption">
-            <span class="parallax-text background-green">Lists on Post Its
-              <span class="period period-red"></span>
-            </span>
-          </div>
-         </div>
-         <div class="parallax pictured-rocks-parallax">
-          <div class="caption">
-            <span class="parallax-text black-text background-yellow">Camping/Hiking
-              <span class="period period-red"></span>
-            </span>
-          </div>
-         </div>
-      </div>
-      <div class="grid-container-exp-edu">
-        <div class="experience-container">
-          <h2 class="h2-formatted">Experience.</h2>
-          <div class="experience-item">
-            <div class="experience"> Software Engineer | February 2021 - Present</div>
-            <div class="experience_subheading"> Tyler Technologies - Troy, MI </div>
-          </div>
-          <div class="experience-item">
-            <div class="experience"> Software Developer | May 2018 - February 2021</div>
-            <div class="experience_subheading"> Tyler Technologies - Troy, MI</div>
-          </div>
-        </div>
-        <div class="education-container">
-          <h2 class="h2-formatted">Education.</h2>
-          <div class="experience-item">
-            <div class="experience"> Univeristy of Michigan - Ann Arbor | Sept 2020 - Present</div>
-            <div class="experience_subheading"> Master of Science in Information - User-Centered Agile Development</div>
-          </div>
-          <div class="experience-item">
-            <div class="experience"> Univeristy of Michigan - Ann Arbor | Sept 2013 - Dec 2018</div>
-            <div class="experience_subheading"> Duel Bachelor of Science in Computer Science and Economics</div>
-          </div>
-        </div>
-    </div>
-    <div class="link-container">
-      <a class="white-btn" href="../resources/Chris-Lebioda-Resume.pdf" target="_blank">Full Resume</a>
-    </div>
     </main>
     <footer>
       <p>&copy; Chris Lebioda 2021. All Rights Reserved</p>
